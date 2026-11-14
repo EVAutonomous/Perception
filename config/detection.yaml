@@ -1,0 +1,17 @@
+object_detection:
+  ros__parameters:
+    use_sim_time: true
+    image_topic: /carla/camera/rgb
+    camera_info_topic: /carla/camera/camera_info
+    points_topic: /carla/lidar/points
+    model: yolo11n.pt
+    device: cpu
+    conf: 0.25
+    imgsz: 640
+    min_points: 3
+    box_margin: 0.0
+    color_max_depth: 60.0
+    projection_only: false
+    sync_slop: 0.02
+    queue_size: 5
+    output_dir: ""

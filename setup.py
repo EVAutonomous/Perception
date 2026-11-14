@@ -22,6 +22,7 @@ setup(
     license='MIT',
     entry_points={
         'console_scripts': [
+            'object_detection = carla_camera_pipeline.object_detection:main',
             'camera_publisher = carla_camera_pipeline.camera_publisher:main',
             'image_saver = carla_camera_pipeline.image_saver:main',
         ],
